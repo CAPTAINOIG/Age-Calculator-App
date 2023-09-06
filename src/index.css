@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,100&family=Poppins:wght@800&display=swap');
+
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+#label{
+  font-weight: bold;
+}
+@media (max-width:700px) {
+  #main{
+    margin-top: 100px;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+  }
+  #wid{
+    padding: 20px;
+  }
+  #italic{
+    font-size: 60px;
+  }
+}
