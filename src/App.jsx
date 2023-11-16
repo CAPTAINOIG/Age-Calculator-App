@@ -12,21 +12,25 @@ function App() {
   const [months, setMonths] = useState("")
   const [years, setYears] = useState("")
 
+  // const date = Date.now()
+  // console.log(date.toLocaleString());
+
 
   const diffInDays = differenceInDays(
-    new Date(years, months, 31),
-    new Date(years, months, days)
+    new Date(years, months - 1, 31),
+    new Date(years, months - 1, days)
   );
-
+  
   const diffInMonths = differenceInMonths(
-    new Date(years, 12, 31),
-   new Date(years, months, days)
-   );
-
-    const diffInYears = differenceInYears(
-      new Date(2023, 12, 31),
-     new Date(years, months, days)
-     );
+    new Date(years, 11, 31),
+    new Date(years, months - 1, days)
+  );
+  
+  const diffInYears = differenceInYears(
+    new Date(2023, 11, 31),
+    new Date(years, months - 1, days)
+  );
+  
 
     //  let date = new Date()
     //  console.log(date);
